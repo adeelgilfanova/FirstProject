@@ -634,21 +634,21 @@ namespace Zadachi
             Console.WriteLine("Задача.36.a");
             int[] massOfCount = new int[12];
             Random rand = new Random();
-            for (int i = 0; i < 12; i++)
+            for (int u = 0; u < 12; u++)
             {
-                massOfCount[i] = rand.Next(0, 9);
+                massOfCount[u] = rand.Next(0, 9);
             }
             int sumOfChetNumber = 0;
             int sumOfNotChetNumber = 0;
-            for (int i = 0; i < 12; i++)
+            for (int u = 0; u < 12; u++)
             {
-                if (i%2 == 1)
+                if (u%2 == 1)
                 {
-                    sumOfChetNumber += massOfCount[i];
+                    sumOfChetNumber += massOfCount[u];
                 }
                 else
                 {
-                    sumOfNotChetNumber += massOfCount[i];
+                    sumOfNotChetNumber += massOfCount[u];
                 }
             }
             sumOfChetNumber = sumOfChetNumber * 3;
@@ -659,24 +659,24 @@ namespace Zadachi
 
             Console.WriteLine("Задача.36.b");
             int[] massOfCountForB = new int[12];
-            for (int i = 0; i < 12; i++)
+            for (int u = 0; u < 12; u++)
             {
-                while (!int.TryParse(Console.ReadLine(), out massOfCountForB[i]))
+                while (!int.TryParse(Console.ReadLine(), out massOfCountForB[u]))
                 {
                     Console.WriteLine("Вы ввели неправильно");
                 }
             }
             sumOfChetNumber = 0;
             sumOfNotChetNumber = 0;
-            for (int i = 0; i < 12; i++)
+            for (int u = 0; u < 12; u++)
             {
-                if (i % 2 == 1)
+                if (u % 2 == 1)
                 {
-                    sumOfChetNumber += massOfCountForB[i];
+                    sumOfChetNumber += massOfCountForB[u];
                 }
                 else
                 {
-                    sumOfNotChetNumber += massOfCountForB[i];
+                    sumOfNotChetNumber += massOfCountForB[u];
                 }
             }
             sumOfChetNumber = sumOfChetNumber * 3;
