@@ -315,7 +315,7 @@ namespace Zadachi
             double y_1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите 2 координату по оси y:");
             double y_2 = double.Parse(Console.ReadLine());
-            Console.WriteLine(Math.Sqrt(Math.Sqrt(x_1 - x_2) + Math.Sqrt(y_1 - y_2)));
+            Console.WriteLine("Расстяние = " + Math.Sqrt(Math.Sqrt(x_1 - x_2) + Math.Sqrt(y_1 - y_2)));
             Console.ReadKey();
 
             Console.WriteLine("Задача.19");
@@ -382,7 +382,7 @@ namespace Zadachi
             Console.WriteLine("Введите число больше 999: ");
             int tale = int.Parse(Console.ReadLine());
             Console.WriteLine($"a) число сотен в числе: {(tale / 100) % 10}");
-            Console.WriteLine($"a) число тысяч в числе: {tale / 1000}");
+            Console.WriteLine($"б) число тысяч в числе: {tale / 1000}");
             Console.ReadKey();
 
             Console.WriteLine("Задача.24");
@@ -402,8 +402,8 @@ namespace Zadachi
 
             Console.WriteLine("Задача.25");
             Console.WriteLine("Введите трехзначное число n");
-            Console.WriteLine("Теперь вернем число x: ");
             int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Теперь вернем число x: ");
             if ((n / 10) % 10 == 0)
             {
                 Console.WriteLine("Вводите заново, число десятков не должны равняться 0!");
